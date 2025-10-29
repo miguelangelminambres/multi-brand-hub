@@ -26,24 +26,3 @@ const LICENSES = process.env.LICENSE_CODES?.split(',') || [
 export async function GET() {
   return NextResponse.json({ licenses: LICENSES });
 }
-```
-4. Commit
-
----
-
-### **PASO 3: Verificar la estructura final**
-
-La **página principal** de tu repositorio debe verse así:
-```
-multi-brand-hub/
-├── app/
-│   ├── api/
-│   │   └── licenses/
-│   │       └── route.js
-│   ├── globals.css  ← Nota: .css (no .cs)
-│   ├── layout.js
-│   └── page.js
-├── next.config.js
-├── package.json
-├── postcss.config.js
-└── tailwind.config.js
